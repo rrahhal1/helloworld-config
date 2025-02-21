@@ -23,7 +23,7 @@ spec:
       containers:
       - name: helloworld
         imagePullPolicy: Always
-        image: quay.io/rearahhal/helloworld:latest
+        image: quay.io/rearahhal/springproject2:latest
         livenessProbe:
           failureThreshold: 3
           httpGet:
