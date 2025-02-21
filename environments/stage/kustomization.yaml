@@ -1,8 +1,2 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- ../../app/
-images:
-- digest: sha256:3d2a290b549d26c8655d96602d5e51cd4a01c7fbdddf13f6c9a7fdedb2ded466
-  name: quay.io/rearahhal/helloworld:latest
-  newName: image-registry.openshift-image-registry.svc:5000/demo1-cicd/helloworld
+bases:
+  - ../../app/
